@@ -6,7 +6,7 @@ body{
   margin: 0 auto;
   background-image: url("../images/textures/noisy_grid.png");
   color: #777;
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;.
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 header{
@@ -25,12 +25,15 @@ header{
 footer{
   clear: both;
   height: 90px;
-  margin-top: 40px;
+  padding: 35px;
+  margin-top: 40px; /*space between page content and footer start*/
   text-align: center;
+  font-size: smaller;
   background: #666;
   color: #888;
   border-top: 8px solid #4aaaa5;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   color: #4aaaa5;
