@@ -1,26 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
   margin: 0 auto;
+  background-image: url("../images/textures/noisy_grid.png");
+  color: #777;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;.
 }
 
 header{
-  background: #333;
   margin-bottom: 40px;
   height: 90px;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
 }
 
 .container{ /*set all content width and center*/
   margin: auto;
   width: 960px;
   overflow: auto;
-
 }
 
 footer{
   clear: both;
   height: 90px;
   margin-top: 40px;
-  border-top: #4aaaa5 thick solid;
+  text-align: center;
   background: #666;
+  color: #888;
+  border-top: 8px solid #4aaaa5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;.
 }
 
 /*header elements*/
@@ -29,52 +43,72 @@ footer{
   text-align:center;
   display: inline;
   padding: 30px;
-  
-  background: teal;
+  background: #4aaaa5;
+  color: white;
 }
 
 .nav_top{
   float:right;
-  display: inline;
 }
+
 .nav_top li { /*list items in nav_top */
   list-style-type:none; /*no bullets*/
   display:inline; /*next to each other*/
+  padding: 10px;
 }
 .nav_top li a { /*links in li */
-  
-  color: white;
+  color: #777;
+  text-decoration: none;
 }
-
 
 /*main_content elements*/
 .main_content{
   width: 650px;
   float:left;
-
-  background: #add8e6;
+  background: #fff;
+  border: thin solid #ddd;
 }
 
 .headshot{
   width: 180px;
+  float: left;
+}
+
+.main_content p {
+  line-height: 170%;
 }
 
 /*sidebar elements*/
 
 .sidebar{
   width: 270px;
+  height: 200px;
   float: right;
-
-  background: #ee82ee;
+  background: #fff;
+  border: thin solid #ddd;
 }
 
 .sidebar h3{
-  text-align: center;
+  width: 210px;
+  text-align: center; /*header text in its container*/
+  font-size: larger;
+  padding: 20px 0 20px 0;
+  margin: 0 auto; /*center header container in sidebar, remove extra top/bottom spaces*/
+  border-bottom: 2px solid #ddd;
+}
+
+.sidebar ul{
+  padding: 20px 0 20px 0; /*was some default padding*/
+  margin: 0 auto; /*center row of links in sidebar*/ 
+  text-align: center; /*center links in ul container*/
 }
 
 .social_links li{
   list-style-type:none;
-  display:inline;
+  padding: 0 2.5px 0 2.5px;
+  margin: 0;
+  display: inline-block;
+  line-height: 0; /*get rid of extra space below img*/
 }
 
 .social_links img {
