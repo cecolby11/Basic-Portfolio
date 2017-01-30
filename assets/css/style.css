@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   background: #4aaaa5;
   color: white;
+  border-bottom: 2px solid #ccc; /*continue header border*/
 }
 
 .nav_top{
@@ -136,15 +137,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /*page specific elements*/
 
+/*about*/
+.about_me{
+  margin: 30px 10px 0 0;
+
+}
+
 .headshot{
   width: 180px;
   margin: 0 25px 0 0;
   float: left;
-}
-
-.about_me{
-  margin: 30px 10px 0 0;
-
 }
 
 .about_me p {
@@ -155,3 +157,43 @@ h1, h2, h3, h4, h5, h6 {
 .about_me p:last-child {
   margin: 0;
 }
+
+/*portfolio*/
+.project_container {
+  overflow: auto; 
+  padding: 40px 0 0 0;
+}
+
+.project:nth-child(odd) {
+  float: left;
+}
+.project:nth-child(even){
+  float: right;
+}
+.project {
+  margin: 0 0 55px 0;
+  text-align: center;
+  position: relative;
+}
+.project:last-child{
+  margin: 0;
+}
+
+.project img {
+  display: block; /*remove a little space under in div (img default inline) messes with positioning of h4*/
+}
+
+.project h4 {
+  font-weight: normal;
+  font-size: 1.3em;
+  margin: 0; /*remove some default margin*/
+  padding: 15px 0 20px 0;
+  background: #4aaaa5;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  z-index: 2;
+  width: 100%;
+}
+
+/*contact*/
