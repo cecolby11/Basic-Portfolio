@@ -28,17 +28,17 @@
 
 			<h2>Contact</h2>
 
-			<form action="mailto:casey.colby@northwestern.edu" method="get" enctype="text/plain">
+			<form class="contact_form" action="mailto:casey.colby@northwestern.edu" method="post" enctype="text/plain">
 				<label>Name</label><br>
-				<input type="text" name="name"><br>
+				<input type="text" name="From" placeholder="John Smith"><br>
 
 				<label>Email</label><br>
-				<input type="email" name="email"><br>
+				<input type="email" name="Email" placeholder="example@gmail.com"><br>
 
 				<label>Message</label><br>
-				<textarea rows="10"></textarea><br>
+				<textarea name="Message"></textarea><br>
 				
-				<input type="submit" value="Submit">
+				<button type="submit" value="Submit">Submit</button>
 			</form>
 
 		</section>

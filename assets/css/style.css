@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   float:left;
   margin: 0;
   background: #4aaaa5;
-  color: white;
+  color: #fff;
   border-bottom: 2px solid #ccc; /*continue header border*/
 }
 
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 .main_content{
   width: 650px;
   float:left;
-  padding: 8px 28px 35px 28px;
+  padding: 8px 30px 35px 30px;
   background: #fff;
   border: thin solid #ddd;
 }
@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; /*remove some default margin*/
   padding: 15px 0 20px 0;
   background: #4aaaa5;
-  color: white;
+  color: #fff;
   position: absolute;
   bottom: 10px;
   z-index: 2;
@@ -197,3 +197,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*contact*/
+.contact_form{
+  padding: 30px 0 0 0;
+  font-size: large;
+}
+
+.contact_form input {
+  height: 30px;
+  width: 100%;
+  margin: 10px 0 20px 0;
+  border: thin solid #ddd;
+}
+.contact_form textarea {
+  width: 100%;
+  height: 200px;
+  margin: 10px 0 20px 0;
+  color: #777;
+  font-size: 14px;
+  border: thin solid #ddd;
+}
+
+.contact_form button {
+  width: 115px;
+  height: 40px;
+  font-size: large;
+  background: #4aaaa5;
+  color: #fff;
+  border: none;
+}
+
+.contact_form input {
+  padding: 0 0 0 10px;
+  color: #777;
+  font-size: 14px;
+}
