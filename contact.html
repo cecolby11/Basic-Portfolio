@@ -10,19 +10,21 @@
 <body>
 
 	<header>
-		<!-- page headline -->
-		<h1>Casey Colby</h1>
-		<!-- horizontal navigation menu as list of links -->
-		<ul>
-			<li><a href="index.html">About</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
+		<div class="container">
+			<!-- page headline -->
+			<h1 class="logo">Casey Colby</h1>
+			<!-- horizontal navigation menu as list of links -->
+			<ul class="nav_top">
+				<li><a href="index.html">About</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
 	</header>
 
-	<div class="main_content"> 
+	<div class="container"> 
 
-		<section>
+		<section class="main_content">
 
 			<h2>Contact</h2>
 
@@ -41,10 +43,10 @@
 
 		</section>
 
-		<section>
+		<section class="sidebar">
 
 			<h3>Connect with Me</h3>
-			<ul>
+			<ul class="social_links">
 				<!-- link github profile -->
 				<li><a href="https://github.com/cecolby11" target="_blank"><img src="assets/images/github.png" alt="github logo"></a></li>
 				<!-- link linkedin profile-->
@@ -55,11 +57,11 @@
 
 		</section>
 
-	</div>
+	</div> <!-- end content container div -->
 
 	<footer>
 		<!-- &#169; is character reference for copyright symbol -->
-		<p>&#169; Copyright 2017 Casey Colby</p>
+		&#169; Copyright 2017 Casey Colby
 	</footer>
 
 </body>
