@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
   border-right: none;
 }
 
-.nav_top li a { /*links in li */
+.nav_top li a{ /*links in li */
   color: #777;
   text-decoration: none;
 }
@@ -231,3 +231,4 @@ h1, h2, h3, h4, h5, h6 {
   color: #777;
   font-size: 14px;
 }
+
