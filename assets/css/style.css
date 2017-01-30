@@ -10,7 +10,7 @@ body{
 }
 
 header{
-  margin-bottom: 40px;
+  margin-bottom: 40px; /*space before page content*/
   height: 90px;
   background: #fff;
   border-bottom: 2px solid #ccc;
@@ -43,28 +43,42 @@ h1, h2, h3, h4, h5, h6 {
 /*header elements*/
 
 .logo{
-  text-align:center;
-  display: inline;
-  padding: 30px;
+  height: 90px;
+  padding: 28px 35px 30px 35px;
+  font-size: 32px;
+  text-align: center;
+  float:left;
+  margin: 0;
   background: #4aaaa5;
   color: white;
 }
 
 .nav_top{
-  float:right;
+  float:right; /*right of header*/
+  margin: 30px 0 35px 0;
+  padding: 0;
 }
 
 .nav_top li { /*list items in nav_top */
+  height: 20px;
+  width: 100px;
   list-style-type:none; /*no bullets*/
-  display:inline; /*next to each other*/
-  padding: 10px;
+  float: left; /*next to each other*/
+  text-align: center;
+  border-right: 1px solid #ddd;
 }
+
+.nav_top li:last-child{
+  border-right: none;
+}
+
 .nav_top li a { /*links in li */
   color: #777;
   text-decoration: none;
 }
 
 /*main_content elements*/
+
 .main_content{
   width: 650px;
   float:left;
@@ -78,26 +92,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; /*remove some default margins*/
   padding: 30px 0 30px 0;
   border-bottom : 3px solid #ddd;
-}
-
-.headshot{
-  width: 180px;
-  margin: 0 25px 0 0;
-  float: left;
-}
-
-.about_me{
-  margin: 30px 10px 0 0;
-
-}
-
-.about_me p {
-  line-height: 170%;
-  margin: 0 0 30px 0;
-}
-
-.about_me p:last-child {
-  margin: 0;
 }
 
 /*sidebar elements*/
@@ -138,4 +132,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .social_links img {
   width: 60px;
+}
+
+/*page specific elements*/
+
+.headshot{
+  width: 180px;
+  margin: 0 25px 0 0;
+  float: left;
+}
+
+.about_me{
+  margin: 30px 10px 0 0;
+
+}
+
+.about_me p {
+  line-height: 170%;
+  margin: 0 0 30px 0;
+}
+
+.about_me p:last-child {
+  margin: 0;
 }
