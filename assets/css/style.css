@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-body{
+.page{
   margin: 0 auto;
   background-image: url("../images/textures/noisy_grid.png");
   color: #777;
