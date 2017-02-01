@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-.page{
+
+.page {
   margin: 0 auto;
   background-image: url("../images/textures/noisy_grid.png");
   color: #777;
@@ -74,9 +75,14 @@ h1, h2, h3, h4, h5, h6 {
   border-right: none;
 }
 
-.nav_top li a{ /*links in li */
+.nav_top li a { /*links in li */
   color: #777;
   text-decoration: none;
+}
+
+.nav_top li a:hover {
+  color: #5D2E16;
+  font-size: 15.5px;
 }
 
 /*main_content elements*/
@@ -94,6 +100,16 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; /*remove some default margins*/
   padding: 30px 0 30px 0;
   border-bottom : 3px solid #ddd;
+}
+
+.main_content p a {
+  color: #5D2E16;
+  text-decoration: none;
+}
+
+.main_content p a:hover {
+  color: #AA6B4A;
+  
 }
 
 /*sidebar elements*/
@@ -136,12 +152,16 @@ h1, h2, h3, h4, h5, h6 {
   width: 60px;
 }
 
+.social_links img:hover {
+  border: #AA6B4A 2px solid;
+  width: 59px;
+}
+
 /*page specific elements*/
 
 /*about*/
 .about_me{
   margin: 30px 10px 0 0;
-
 }
 
 .headshot{
@@ -157,6 +177,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .about_me p:last-child {
   margin: 0;
+  padding-top: 10px;
 }
 
 /*portfolio*/
@@ -233,3 +254,27 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
 }
 
+/*animations*/
+
+.project {
+   -webkit-transition: all 0.6s ease;
+     -moz-transition: all 0.6s ease;
+       -o-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease;
+          transition: all 0.6s ease;
+}
+
+.project:nth-child(odd):hover{
+    -webkit-transform: rotate(-5deg);
+     -moz-transform: rotate(-5deg);
+       -o-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+.project:nth-child(even):hover{
+    -webkit-transform: rotate(5deg);
+     -moz-transform: rotate(5deg);
+       -o-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
