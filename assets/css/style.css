@@ -153,7 +153,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social_links img:hover {
-  border: #AA6B4A 2px solid;
   width: 59px;
 }
 
@@ -264,14 +263,14 @@ h1, h2, h3, h4, h5, h6 {
           transition: all 0.6s ease;
 }
 
-.project:nth-child(odd):hover{
+.project:nth-child(even):hover {
     -webkit-transform: rotate(-5deg);
      -moz-transform: rotate(-5deg);
        -o-transform: rotate(-5deg);
       -ms-transform: rotate(-5deg);
           transform: rotate(-5deg);
 }
-.project:nth-child(even):hover{
+.project:nth-child(odd):hover {
     -webkit-transform: rotate(5deg);
      -moz-transform: rotate(5deg);
        -o-transform: rotate(5deg);
