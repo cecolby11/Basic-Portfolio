@@ -247,6 +247,10 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
 }
 
+.contact_form button:hover{
+  background: #347773;
+}
+
 .contact_form input {
   padding: 0 0 0 10px;
   color: #777;
@@ -262,18 +266,18 @@ h1, h2, h3, h4, h5, h6 {
       -ms-transition: all 0.6s ease;
           transition: all 0.6s ease;
 }
-
 .project:nth-child(even):hover {
-    -webkit-transform: rotate(-5deg);
-     -moz-transform: rotate(-5deg);
-       -o-transform: rotate(-5deg);
-      -ms-transform: rotate(-5deg);
-          transform: rotate(-5deg);
+    -webkit-transform: rotate(-3deg);
+     -moz-transform: rotate(-3deg);
+       -o-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+          transform: rotate(-3deg);
 }
 .project:nth-child(odd):hover {
-    -webkit-transform: rotate(5deg);
-     -moz-transform: rotate(5deg);
-       -o-transform: rotate(5deg);
-      -ms-transform: rotate(5deg);
-          transform: rotate(5deg);
+    -webkit-transform: rotate(3deg);
+     -moz-transform: rotate(3deg);
+       -o-transform: rotate(3deg);
+      -ms-transform: rotate(3deg);
+          transform: rotate(3deg);
 }
+
